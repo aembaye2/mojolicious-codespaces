@@ -1,15 +1,12 @@
 {
-  "name": "Perl + Mojolicious Dev",
-  "image": "mcr.microsoft.com/devcontainers/perl:5", 
-  "features": {},
+  "name": "Mojolicious Dev",
+  "image": "mcr.microsoft.com/devcontainers/perl:5",
   "postCreateCommand": "cpanm Mojolicious",
+  "forwardPorts": [3000],
   "customizations": {
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      },
+      "settings": {},
       "extensions": []
     }
-  },
-  "forwardPorts": [3000]
+  }
 }
